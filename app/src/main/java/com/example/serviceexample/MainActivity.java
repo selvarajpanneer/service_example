@@ -46,10 +46,7 @@ public class MainActivity extends Activity {
                             Toast.LENGTH_LONG).show();
                     textView.setText("Download done");
                     Bitmap image = BitmapFactory.decodeFile(filePath);
-                    BitmapDrawable bitmapDrawable = new BitmapDrawable(image);
-                    imageView.setImageDrawable(bitmapDrawable);
-//                    Bitmap image = BitmapFactory.decodeFile(filePath);
-//                    imageView.setImageBitmap(image);
+                    imageView.setImageBitmap(image);
                     if(imageView!=null){
                         progressBar.setVisibility(View.INVISIBLE);
                     }
